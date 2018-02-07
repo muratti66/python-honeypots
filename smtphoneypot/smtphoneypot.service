@@ -1,0 +1,15 @@
+[Unit]
+Description=Smtp Honeypot Service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=2
+WorkingDirectory=/opt/smtphoneypot
+ExecStart=/usr/bin/python3 /opt/smtphoneypot/server.py &> /dev/null
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target

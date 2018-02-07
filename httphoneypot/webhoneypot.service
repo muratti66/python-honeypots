@@ -1,0 +1,15 @@
+[Unit]
+Description=Mailcat Server Service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=2
+WorkingDirectory=/opt/webhoneypot
+ExecStart=/usr/bin/python3 /opt/webhoneypot/server.py &> /dev/null
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target

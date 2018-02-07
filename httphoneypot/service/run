@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec python3 /opt/webhoneypot/server.py &> /dev/null

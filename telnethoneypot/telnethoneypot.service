@@ -1,0 +1,15 @@
+[Unit]
+Description=Telnet Honeypot Service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=2
+WorkingDirectory=/opt/telnethoneypot
+ExecStart=/usr/bin/python3 /opt/telnethoneypot/server.py &> /dev/null
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
