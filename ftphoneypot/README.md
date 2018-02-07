@@ -41,7 +41,6 @@
 ```07/02/2018 17:37:17.707 [14845] INFO: - 0.0.0.0:21 socket started..
 07/02/2018 17:37:28.067 [14845] INFO: - x.y.z.t:58999 connected to ftp socket
 07/02/2018 17:37:28.314 [14845] INFO: - Changed mod, ip: 0.0.0.0, port : 59000
-07/02/2018 17:37:30.954 [14845] ERROR: - Error : 'FTPServer' object has no attribute 'MLST'
 07/02/2018 17:37:30.986 [14845] INFO: - Changed mod, ip: 0.0.0.0, port : 59002
 07/02/2018 17:37:31.118 [14845] INFO: - Changed mod, ip: 0.0.0.0, port : 59004
 07/02/2018 17:37:31.392 [14845] INFO: - Changed mod, ip: 0.0.0.0, port : 59006
